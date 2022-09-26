@@ -236,17 +236,38 @@ div.absolute {
     .about-me {
         flex-direction: column;
     }
-    .contact-me h3,
-    .about-me h2 {
+    .contact-me h3 {
         border-right: 0;
         text-decoration: underline;
         padding-bottom: 0;
         width: 100vw;
         text-align: center;
+        padding-right: 135px;
+    }
+
+    .about-me h2 {
+        border-right: 0;
+        text-decoration: underline;
+        padding-bottom: 15;
+        width: 100vw;
+        text-align: center;
+        padding-right: 135px;
+    }
+
+    .about-me p {
+        margin-left: 10px;
     }
 
     .info {
         padding-right: 85px;
         text-align: center;
+    }
+
+    .info nav ul {
+        padding-right: 79px;
+    }
+
+    .info nav {
+        padding-top: 0px;
     }
 }

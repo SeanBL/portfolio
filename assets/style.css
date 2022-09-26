@@ -232,10 +232,26 @@ div.absolute {
         flex-basis: 100%;
     }
 
+
+
     .contact-me,
-    .about-me {
+    .about-me,
+    .work {
         flex-direction: column;
     }
+
+    .work h3 {
+        border-right: 0;
+        text-decoration: underline;
+        padding-bottom: 0;
+        width: 65vw;
+        text-align: center;
+    }
+
+    .work-text {
+        margin-bottom: 25px;
+    }
+
     .contact-me h3 {
         border-right: 0;
         text-decoration: underline;
@@ -249,9 +265,8 @@ div.absolute {
         border-right: 0;
         text-decoration: underline;
         padding-bottom: 15;
-        width: 100vw;
+        width: 82vw;
         text-align: center;
-        padding-right: 135px;
     }
 
     .about-me p {

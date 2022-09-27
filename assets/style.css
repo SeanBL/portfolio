@@ -79,11 +79,15 @@ div.absolute {
     position: absolute;
     bottom: 10px;
     right: 0;
-    width: 10vw;
-    height: 100px;
+    width: 200px;
+    height: 3vw;
     border: 3px solid purple;
     background-color: aquamarine;
     margin-right: 10px;
+}
+
+div.absolute p {
+    text-align: center;
 }
 
 .about-me {
@@ -234,6 +238,13 @@ div.absolute {
 
     .column {
         flex-basis: 100%;
+    }
+
+    div.absolute {
+        
+        width: 200px;
+        height: 5vw;
+        
     }
 
 

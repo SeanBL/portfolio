@@ -74,22 +74,16 @@ a {
     max-width: inherit;
 }
 
-div.absolute {
-    display: flex;
+.main-image div {
     position: absolute;
-    bottom: 10px;
-    right: 0;
-    width: 200px;
-    height: 3vh;
-    border: 3px solid purple;
-    background-color: aquamarine;
-    margin-right: 10px;
-    justify-content: center;
-}
+    padding: 3px;
+    bottom: 20px;
+    right: 40px;
+    background-color: blanchedalmond;
+    font-size: 20px;
+} 
 
-div.absolute p {
-    font-size: 10px;
-}
+
 
 .about-me {
     margin-bottom: 20px;

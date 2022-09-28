@@ -27,7 +27,7 @@ body {
     padding-top: 4px;
     padding-bottom: 4px;
     padding-right: 12px;
-    width: 375px;
+    width: 410px;
 }
 
 .header h1 {
@@ -35,6 +35,7 @@ body {
     font-size: 40px;
     background-color: #92cbcd;;
     text-align: right;
+    padding: 15px;
 }
 
 .header nav {
@@ -67,7 +68,6 @@ a {
 .main-image {
     max-width: 100%;
     position: relative;
-    border: 3px solid greenyellow;
 }
 
 .main-image img {
@@ -76,14 +76,14 @@ a {
 
 .main-image div {
     position: absolute;
-    padding: 3px;
+    padding: 4px;
     bottom: 20px;
-    right: 40px;
+    right: 50px;
     background-color: blanchedalmond;
-    font-size: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 } 
-
-
 
 .about-me {
     margin-bottom: 20px;
@@ -136,13 +136,96 @@ a {
     width: 150px;
 }
 
-.columnbar img { 
-    max-width: 100%;
+.columnbar {
+    position: relative;
 }
 
-.small-app img{
+.columnbar img { 
     max-width: 100%;
-    border: 5px solid green;
+    border: 5px solid aqua;
+}
+
+.columnbar div {
+    position: absolute;
+    bottom: 35px;
+    background-color: aqua;
+    padding-top: 3px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 12px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.columnbar p {
+    position: absolute;
+    bottom: 20px;
+    background-color: aqua;
+    padding-right: 46px;
+    padding-left: 10px;
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+
+.small-app1 img,
+.small-app2 img,
+.small-app3 img,
+.small-app4 img {
+    max-width: 100%;;
+    border: 5px solid aqua;
+}
+
+.small-app1,
+.small-app2,
+.small-app3,
+.small-app4 {
+    position: relative;
+    display: flex;
+}
+
+.small-app1 div {
+    position: absolute;
+    bottom: 61px;
+    background-color: aqua;
+    padding-top: 3px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 12px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.small-app1 p {
+    position: absolute;
+    bottom: 46px;
+    background-color: aqua;
+    padding-right: 36px;
+    padding-left: 10px;
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+
+.small-app2 div {
+    position: absolute;
+    bottom: 61px;
+    background-color: aqua;
+    padding-top: 3px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 60px;
+    font-size: 28px;
+    font-weight: bold;
+    flex: 2 2 120px;
+}
+
+.small-app2 p {
+    position: absolute;
+    bottom: 46px;
+    background-color: aqua;
+    padding-right: 7px;
+    padding-left: 10px;
+    font-size: 20px;
+    padding-bottom: 3px;
 }
 
 .contact-me {
@@ -151,18 +234,6 @@ a {
     background-color: transparent;
     color: #31343d;
 }
-
-/* .contact-me h4 {
-    border-right: 3px solid black;
-    padding-bottom: 50px;
-    padding-right: 15px;
-    padding-top: 70px;
-    text-align: end;
-    font-size: 40px;
-    float: left;
-    margin-left: 30px;
-    width: 108px;
-} */
 
 .contact-me h3 {
     border-right: 3px solid black; 
@@ -235,14 +306,9 @@ a {
         flex-basis: 100%;
     }
 
-    div.absolute {
-        
-        width: 200px;
-        height: 5vw;
-        
-    }
-
-
+    .main-image div {
+        font-size: 18px;
+    } 
 
     .contact-me,
     .about-me,
@@ -260,6 +326,39 @@ a {
 
     .work-text {
         margin-bottom: 25px;
+    }
+
+    .columnbar div {
+        bottom: 26px;
+        padding-right: 10px;
+        font-size: 18px;
+    }
+    
+    .columnbar p {
+        padding-right: 46px;
+        font-size: 10px;
+    }
+
+    .small-app1 div {
+        bottom: 52px;
+        padding-right: 10px;
+        font-size: 18px;
+    }
+    
+    .small-app1 p {
+        
+        font-size: 10px;
+    }
+
+    .small-app2 div {
+        bottom: 52px;
+        padding-right: 42px;
+        font-size: 18px;
+    }
+    
+    .small-app2 p {
+        
+        font-size: 13px;
     }
 
     .contact-me h3 {

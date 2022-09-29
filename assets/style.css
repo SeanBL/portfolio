@@ -24,8 +24,6 @@ body {
 }
 
 .name-header {
-    padding-top: 4px;
-    padding-bottom: 4px;
     padding-right: 12px;
     width: 453px;
 }
@@ -264,10 +262,6 @@ body {
     text-decoration: none;
 }
 
-/*Reference material*/
-.move-down {
-    margin: 1px;
-}
 .row {
     display: flex;
     gap: 5px;
@@ -276,10 +270,6 @@ body {
 .column {
     padding: 1rem 0;
     flex: 1;
-}
-
-.col-two-thirds {
-    flex: 2;
 }
 
 @media only screen and (max-width: 768px) {

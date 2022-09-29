@@ -1,45 +1,73 @@
+/*This selector sets the default padding and margins for the entire css 
+document.*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+/*This element sets the default font type and background color for the entire
+page.*/
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: rgb(255, 255, 255);
     
 }
 
+/*This class sets up the flex container*/
 .container {
     max-width: 100%;
     margin: 0 auto;
 }
 
+/*This class sets up the rows for each class of elements, so the class will wrap and 
+flex with different screen sizes.*/
+.row {
+    display: flex;
+    gap: 5px;
+}
+
+/*This class sets up columns for each class, so the items will align vertically
+at smaller screen sizes.*/
+.column {
+    padding: 1rem 0;
+    flex: 1;
+}
+
+
+/*This class establishes the background color, font, and inner dimensions of the
+header.*/
 .header {
     padding-top: 12px;
     padding-bottom: 20px;
-    padding-right: 60px;
+    padding-right: 30px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #31343d;
     color: #31343d;
 }
 
+/*This class establishes the text background length and inner dimensions.*/
 .name-header {
     padding-right: 12px;
     width: 453px;
 }
 
+/*This class creates the circle around the profile pic.*/
 .name-header img {
     border-radius: 50%;
 }
 
+/*This class places the profile pic on the left side of the header.*/
 .float-left {
     float: left;
 }
 
+/*This class adds a top margin to the header name for proper alignment.*/
 .name-header div {
     margin-top: 26px;
 }
 
+/*This class adjusts the name text and the dimensions of the blue header box.*/
 .header h1 {
     display: inline-block;
     font-size: 40px;
@@ -50,6 +78,7 @@ body {
     padding-bottom: 5px;
 }
 
+/*This class aligns the navigation list and sets the font type and size.*/
 .header nav {
     padding-top: 15px;
     float: right;
@@ -57,16 +86,20 @@ body {
     font-size: 20px;
 }
 
+/*This class determines the bullet point styles.*/
 .header nav ul {
     list-style-type: none;
 }
 
+/*This class determines the orientation of the list.*/
 .header nav ul li {
     display: inline-block;
     margin-left: 5px;
     margin-bottom: 5px;
 }
 
+/*This class with all it's elements sets the position, color, and decoration of each
+listed item in relation to each other.*/
 .header nav ul li a {
     border-bottom: 3px solid #92cbcd;
     padding-bottom: 2px;
@@ -77,15 +110,19 @@ body {
     text-decoration: none;
 }
 
+/*This class aligns the banner image.*/
 .main-image {
     max-width: 100%;
     position: relative;
 }
 
+/*This class inherits the proper width of the image, so the image doesn't lose
+it's resolution.*/
 .main-image img {
     max-width: inherit;
 }
 
+/*This class places a subtitle text over the banner image.*/
 .main-image div {
     position: absolute;
     padding: 4px;
@@ -97,6 +134,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 } 
 
+/*This class sets the container for the about me section.*/
 .about-me {
     margin-bottom: 20px;
     padding: 50px;
@@ -107,6 +145,9 @@ body {
     color: #31343d;
 }
 
+/*This class places the about me title to the left of the page, and adds
+a vertical right border to the text. This class also aligns the paragraph
+text in relation to the "about me" title*/
 .about-me h2 {
     border-right: 3px solid black;
     padding-bottom: 10px;
@@ -119,10 +160,8 @@ body {
     margin-right: 20px;
 }
 
-.about-me p {
-    text-align: left;
-}
-
+/*This class is the parent class and determines the overall make up of the work 
+section.*/
 .work {
     display: inline-block;
     padding: 61px;
@@ -134,25 +173,24 @@ body {
     display: flex;
 } 
 
+/*This class positions the title for the work section and aligns the title with
+the app images to the right of the title.*/
 .work h3 {
     border-right: 3px solid black; 
-    padding-bottom: 700px;
     padding-right: 15px;
-    padding-top: 0px;
-    text-align: end;
     font-size: 40px;
-    float: left;
     margin-left: 30px;
     margin-right: 30px;
-    width: 150px;
 }
 
+/*This class places a black screen with 60% opacity over the top app image.*/
 .columnbar {
     position: relative;
     opacity: .6;
     transition: .5s;
 }
 
+/*These classes reduce the opacity of the rest of the app images by 60%*/
 .small-app1,
 .small-app2,
 .small-app3,
@@ -161,17 +199,21 @@ body {
     transition: .5s;
 }
 
+/*These classes return the opacity of the images to 100%*/
 .columnbar:hover, 
 .small-app1:hover,
 .small-app2:hover,
 .small-app3:hover,
 .small-app4:hover {opacity: 1}
 
+/*This class sets the dimensions of the image and adds
+a border around the image.*/
 .columnbar img { 
     max-width: 100%;
     border: 5px solid aqua;
 }
 
+/*These classes add text boxes to each app image.*/
 .columnbar div,
 .small-app1 div,
 .small-app2 div,
@@ -187,6 +229,7 @@ body {
     flex: 2 2 120px;
 }
 
+/*These classes add a subtext to each text box.*/
 .columnbar div .lower-text,
 .small-app1 div .lower-text,
 .small-app2 div .lower-text,
@@ -196,6 +239,8 @@ body {
     font-weight: normal;
 }
 
+/*These classes place the images in the work section with borders around 
+each image.*/
 .small-app1 img,
 .small-app2 img,
 .small-app3 img,
@@ -204,6 +249,8 @@ body {
     border: 5px solid aqua;
 }
 
+/*These classes position each app image in a relative position, so the text boxes
+can be positioned in an absolute position relative to these classes.*/
 .small-app1,
 .small-app2,
 .small-app3,
@@ -212,6 +259,7 @@ body {
     display: flex;
 }
 
+/*This class along with the row class sets up the contact me section on the horizontal axis*/
 .contact-me {
     padding: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -219,6 +267,7 @@ body {
     color: #31343d;
 }
 
+/*This class aligns and positions the contact me title to the left of the page.*/
 .contact-me h3 {
     border-right: 3px solid black; 
     padding-right: 15px;
@@ -230,28 +279,33 @@ body {
     width: 150px;
 }
 
+/*This class along with the column class places this contact info list on the right side
+on its own column separate from the contact me title.*/
 .contact-me p {
     text-align: left;
     margin-left: 175px;
 }
 
+/*This class determines the font type, size, and positioning of the contact me list.*/
 .info nav {
     padding-top: 15px;
-    float: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
+/*This class detemines the bullet types for the list.*/
 .info nav ul {
     list-style-type: none;
 }
 
+/*This class spaces the elements evenly and lines each one in a row.*/
 .info nav ul li {
     display: inline-block;
     margin-left: 5px;
     margin-bottom: 5px;
 }
 
+/*This class adds the border bottom to function as an underline for each title.*/
 .info nav ul li a {
     border-bottom: 3px solid #92cbcd;
     padding-bottom: 2px;
@@ -262,16 +316,8 @@ body {
     text-decoration: none;
 }
 
-.row {
-    display: flex;
-    gap: 5px;
-}
-
-.column {
-    padding: 1rem 0;
-    flex: 1;
-}
-
+/*This class determines how the classes and elements will behave at a max screen width of 
+768px.*/
 @media only screen and (max-width: 768px) {
     
     .row {
@@ -282,16 +328,30 @@ body {
         flex-basis: 100%;
     }
 
+    /*This adjusts the size of the subtitle to fit the image at a smaller size.*/
     .main-image div {
         font-size: 18px;
     } 
 
+    /*This moves the titles for each section from the left of the content, to the 
+    top of each respective section.*/
     .contact-me,
     .about-me,
     .work {
         flex-direction: column;
     }
 
+    /*This removes the right border line and places an underline when the screen
+    shrinks to 768px and below.*/
+    .about-me h2 {
+        border-right: 0;
+        text-decoration: underline;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*This adjusts the right border line to switch to an underline of the title
+    when the classes align in a column.*/
     .work h3 {
         border-right: 0;
         text-decoration: underline;
@@ -300,10 +360,13 @@ body {
         text-align: center;
     }
 
+    /*This adds a little space between the work title and the content below it.*/
     .work-text {
         margin-bottom: 25px;
     }
 
+    /*These classes adjust the alignment of the subtitles for each app when the
+    screen reach 768px and below.*/
     .columnbar div,
     .small-app1 div,
     .small-app2 div,
@@ -314,6 +377,8 @@ body {
         font-size: 18px;
     }
     
+    /*These classes adjust the alignment of the subtitles for each app when the
+    screen reach 768px and below.*/
     .columnbar div .lower-text,
     .small-app1 div .lower-text,
     .small-app2 div .lower-text,
@@ -322,6 +387,7 @@ body {
         font-size: 10px;
     }
 
+    /*This realigns the "contact me" title.*/
     .contact-me h3 {
         border-right: 0;
         text-decoration: underline;
@@ -331,23 +397,14 @@ body {
         padding-right: 0;
         margin-right: 0;
     }
-
-    .about-me h2 {
-        border-right: 0;
-        text-decoration: underline;
-        padding-bottom: 15;
-        width: 82vw;
-        text-align: center;
-    }
-
-    .about-me p {
-        margin-left: 10px;
-    }
-
+    
+    /*This realigns the contact info*/
     .info {
         text-align: center;
     }
 
+    /*This removes a little bit of space between the "contact me" title the info
+    below it.*/
     .info nav {
         padding-top: 0px;
     }

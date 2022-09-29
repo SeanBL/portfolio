@@ -24,8 +24,6 @@ body {
 }
 
 .name-header {
-    padding-top: 4px;
-    padding-bottom: 4px;
     padding-right: 12px;
     width: 453px;
 }
@@ -69,7 +67,7 @@ body {
     margin-bottom: 5px;
 }
 
-a {
+.header nav ul li a {
     border-bottom: 3px solid #92cbcd;
     padding-bottom: 2px;
     padding-left: 7px;
@@ -264,10 +262,6 @@ a {
     text-decoration: none;
 }
 
-/*Reference material*/
-.move-down {
-    margin: 1px;
-}
 .row {
     display: flex;
     gap: 5px;
@@ -276,10 +270,6 @@ a {
 .column {
     padding: 1rem 0;
     flex: 1;
-}
-
-.col-two-thirds {
-    flex: 2;
 }
 
 @media only screen and (max-width: 768px) {

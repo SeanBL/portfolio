@@ -9,16 +9,22 @@
 </head>
 <body>
 
+    <!--The container class provides a container for each element on the webpage to flex and wrap properly-->
     <div class="container">
+        <!--The "header" class sets up the background header while the "row" class places the enitre header 
+        section on the horizontal axis. -->
         <header class="row header">
+            <!--The "name-header" class adds the name text with the blue background dimensions-->
             <h1 class="name-header">
                 <img
                 src="./assets/face.jpg" class="float-left"
-                alt="add later"
+                alt="Image of a profile picutre of the website's author"
                 style="width: 86px;"
                 />
                 <div>Sean Bristol-Lee</div> 
             </h1>
+            <!--The "row" class sets up the navigation list on the horizontal axis while the "column"
+            class sets up the vertical axis.-->
             <div class="row"></div>
                 <div class="column">
                 <nav>
@@ -40,76 +46,100 @@
             </div>
         </header>
 
+        <!--This class sets up the banner image underneath the header-->
         <div class="main-image">
                 <img
-                src="./assets/brick-long.jpg"
-                alt="Change when image is decided"
+                    src="./assets/brick-long.jpg"
+                    alt="Image of a neon sign with the words, 'UCB Coding Bootcamp'"
                 />
                 <div>
                     Cool subtitle here!
                 </div>
         </div>
 
+        <!--The "about me" class sets up the about me section. The id allows the link from the nav list
+        to link the user to this section. The row and column class set this article to flex and wrap -->
         <article id="about-me" class="about-me">
             <h2 class="about">About Me</h2>
             <div class="row"></div>
-            <div class="column me-info">
+            <div class="column">
                 <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati impedit eius illum dolorum aut molestiae perspiciatis, repellat consectetur beatae veritatis neque iure ipsa doloremque unde tenetur nisi minus sequi molestias!
                 </p>
             </div>
         </article>
 
+        <!--The "work" class sets up the work section. The top app class contains all the app images into 
+        one column. The columnbar class is the class for the top app on the page. -->
         <section id="work" class="work">
             <h3 class="work-text">Work</h3>
             <figure class="top-app">
                 <div class="columnbar">
-                    <img
-                        src="./assets/surf-img.jpg"
-                        alt="Change when image is decided"
-                    />
-                    <div>Surf Report<p class="lower-text">MERN Stack</p></div>
-                    
+                    <a href="https://www.surf-forecast.com/provinces/california/breaks"
+                        target="_blank">
+                        <img
+                            src="./assets/surf-img.jpg"
+                            alt="Image of a person riding a wave on a surf board"
+                        />
+                    </a>
+                    <div>Surf Report<p class="lower-text">MERN Stack</p></div>  
                 </div>
+
+                <!--This row class comprises of the next row of app images under the top app image. The column classes
+                allow each image on the row to line up vertically when the screen shrinks-->
                 <div class="row">
                     <div class="column small-app1">
-                        <img
-                        src="./assets/led-img.jpg"
-                        alt="Change when image is decided"
-                        />
-                        <div>LED Wall<p class="lower-text">Node/IoT</p></div>
-                        
+                        <a href="https://www.christiedigital.com/products/led-video-walls"
+                            target="_blank">
+                            <img
+                                src="./assets/led-img.jpg"
+                                alt="Image of a wall of LED lights"
+                            />
+                        </a>
+                        <div>LED Wall<p class="lower-text">Node/IoT</p></div>    
                     </div>
+
                     <div class="column small-app2">
-                        <img
-                        src="./assets/calc.png"
-                        alt="Change when image is decided"
-                        />
+                        <a href="https://www.calculator.net/"
+                            target="_blank">
+                            <img
+                                src="./assets/calc.png"
+                                alt="Image of an RGB calculator"
+                            /> 
+                        </a>
                         <div>Calculator<p class="lower-text">React/JavaScript/CSS</p></div>
-                        
                     </div>
                 </div>
+
+                <!--This next row class represents the last row of apps. -->
                 <div class="row">
                     <div class="column small-app3">
-                        <img
-                        src="./assets/puzzle.png"
-                        alt="Change when image is decided"
-                        />
+                        <a href="https://www.jigsawplanet.com/"
+                            target="_blank">
+                            <img
+                                src="./assets/puzzle.png"
+                                alt="Image of a jigsaw puzzle piece"
+                            />
+                        </a>
                         <div>Pastel Puzzels<p class="lower-text">MERN Stack</p></div>
-                        
                     </div>
+
                     <div class="column small-app4">
-                        <img
-                        src="./assets/run.png"
-                        alt="Change when image is decided"
-                        />
+                        <a href="https://getrunbuddy.app/"
+                            target="_blank">
+                            <img
+                                src="./assets/run.png"
+                                alt="Image of two people running in the outdoors"
+                            />
+                        </a>
                         <div>Run Buddy<p class="lower-text">HTML/CSS</p></div>
                     </div>
                 </div>
             </figure>
         </section>
 
-
+        <!--This class sets up the footer section, placing the h3 on the left side of the row
+        and the contact list on the right side of the row. -->
         <footer id="contact-me" class="row contact-me">
             <h3 class="contact">Contact me</h3>
             <div class="row"></div>

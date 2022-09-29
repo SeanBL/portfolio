@@ -69,7 +69,7 @@ body {
     margin-bottom: 5px;
 }
 
-a {
+.header nav ul li a {
     border-bottom: 3px solid #92cbcd;
     padding-bottom: 2px;
     padding-left: 7px;

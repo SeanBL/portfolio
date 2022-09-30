@@ -7,7 +7,7 @@ The purpose of creating this portfolio is to create a virtual document displayin
 ## Installation
 
 No installation is required t view the webpage. Here is a link to the deployed website:
-
+https://seanbl.github.io/portfolio/
 
 ## Usage
 
@@ -15,7 +15,7 @@ The following image show the web application's appearance and functionality:
 
 The Portifolio includes a header with my name, profile pic, and navigation links to sections on the portfolio. The links will link to the appropriate sections in the portfolio. The portfolio also displays 5 applications with images for each application. Each image is also a link that takes the user to the website of the application. At the very bottom is the contact me footer with a list of links to contact me by phone, email, or through various socia media apps. 
 
-![]()
+![The portfolio webpage includes a header with navigation links, an about me section, a list of 5 applications with images, and contact information footer.](./assets/portfolio-page.png)
 
 **Note**: This lay out is designed to be viewed in either desktop viewing, ipads, or mobile phones. The webpage content does adjust to screen size.
 
